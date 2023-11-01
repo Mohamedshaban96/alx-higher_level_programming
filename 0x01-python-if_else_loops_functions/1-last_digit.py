@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import random
-number = random.randint(-10000, 100000)
+number = random.randint(-10000, 10000)
 ladi = abs(number) % 10
 if number < 0:
     ladi = -ladi
