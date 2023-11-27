@@ -7,6 +7,6 @@ def print_matrix_integer(matrix=[[]]):
             if coun == len(x) - 1:
                 print("{:d}".format(i), end='')
             else:
-                print("{:d}".format(i), end="")
+                print("{:d}".format(i), end=" ")
                 coun += 1
         print()
