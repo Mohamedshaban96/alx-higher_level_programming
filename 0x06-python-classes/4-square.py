@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""creating a Square class"""
+	"""creating a Square class"""
 
 
 class Square:
@@ -20,7 +20,7 @@ class Square:
 
 	@size.setter
 		def size(self, value):
-		"""method to set up the size of the square"""
+			"""method to set up the size of the square"""
 		self.__size = value
 
 		if type(value) is not int:
