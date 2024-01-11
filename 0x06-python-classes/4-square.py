@@ -4,7 +4,8 @@ In the Square class we initialize each object by the
 __init__ method with a private instance variable called
 __size that takes the size variable's value passed as
 argument. Also checks if the size arg has a valid value.
-area method returns the area of the square."""
+area method returns the area of the square.
+"""
 
 
 class Square:
