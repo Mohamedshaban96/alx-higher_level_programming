@@ -6,19 +6,24 @@ __size that takes the size variable's value passed as
 argument. Also checks if the size arg has a valid value.
 area method returns the area of the square.
 """
+
+
 class Square:
     """a square class"""
     def __init__(self, size=0, position=(0, 0)):
         """setting inistant attributes"""
         self.__size = size
         self.__position = position
+
     def area(self):
         """function return the area of the square"""
         return self.__size * self.__size
+
     @property
     def size(self):
         """method that return the size of the square"""
         return self.__size
+
     @size.setter
     def size(self, value):
         """method to set up the size of the square"""
@@ -28,6 +33,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
     @property
     def position(self):
         return self.__position
