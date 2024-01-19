@@ -14,7 +14,7 @@ class Square:
     def __init__(self, size=0):
         """setting inistant attributes"""
 
-    self.__size = size
+        self.__size = size
 
     def area(self):
         """function return the area of the square"""
