@@ -56,4 +56,4 @@ class Square:
             n = 0
             while n < self.__size:
                 print(" " * self.__position[0] + "#" * self.__size)
-            n = n + 1
+                n = n + 1
