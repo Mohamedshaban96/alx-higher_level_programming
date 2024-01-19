@@ -11,11 +11,10 @@ area method returns the area of the square.
 class Square:
     """a square class"""
 
-    def __init__(self, size=0, position=(0, 0)):
+    def __init__(self, size=0):
         """setting inistant attributes"""
 
         self.__size = size
-        self.__position = position
 
     def area(self):
         """function return the area of the square"""
@@ -41,26 +40,11 @@ class Square:
         else:
             self.__size = value
 
-    @property
-    def position(self):
-        return self.__position
-
-    @position.setter
-    def position(self, value):
-        if type(value) is not tuple or len(value) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if type(value[0]) is not int or type(value[1]) is not int:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
-
     def my_print(self):
         if self.__size == 0:
             print("")
         else:
-            print("\n" * self.__position[1], end="")
             n = 0
             while n < self.__size:
-                print(" " * self.__position[0] + "#" * self.__size)
+                print("#" * self.__size)
                 n = n + 1
